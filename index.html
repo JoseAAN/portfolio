@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Antonio Alonso Navarro | Desarrollador Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Navbar-->
+        <header class="navbar">
+            <div class="logo">José Antonio Alonso Navarro</div>
+
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav aria-label="Navegación principal" class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto" class="btn-contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="inicio" class="hero">
+                <span class="badge">Disponible para trabajar</span>
+                <h1 class="hero-title">Hola, soy <span class="text-accent">José Antonio</span></h1>
+                <p class="hero-subtitle">Desarrollador Web</p>
+                <div class="hero-actions">
+                    <a href="#proyectos" class="btn btn-primary">Proyectos en los que he contribuido</a>
+                    <a href="tu-cv.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Mi
+                        currículum</a>
+                </div>
+            </section>
+            <section id="sobre-mi" class="seccion-sobre-mi">
+                <h2 class="section-title">Sobre mí</h2>
+
+                <div class="card about-card">
+                    <div class="about-grid">
+
+                        <div class="about-content">
+                            <div class="about-text">
+                                <p>Soy un desarrollador web apasionado por crear interfaces limpias, accesibles y
+                                    altamente funcionales con experiencia en desarrollo en wordpress.</p>
+                                <p>Actualmente me enfoco en dominar el Diseño de Interfaces, asegurando que cada línea
+                                    de código no solo funcione, sino que ofrezca una excelente experiencia de usuario.
+                                    Me encanta resolver problemas complejos mediante un diseño minimalista y
+                                    eficiente.</p>
+                            </div>
+
+                            <div class="about-info">
+                                <span class="info-badge">📍 España, Gran Canaria</span>
+                                <span class="info-badge">Desarrollador Web</span>
+                                <span class="info-badge">Especialidad Frontend</span>
+                            </div>
+                        </div>
+
+                        <!-- Bloque de la foto (Derecha) -->
+                        <div class="about-image">
+                            <img src="img/avatar.jpg" alt="avatar" loading="lazy">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Proyectps -->
+            <section id="proyectos" class="seccion-proyectos">
+                <h2 class="section-title">Proyectos Destacados</h2>
+
+                <div class="bento-grid">
+                    <a href="https://github.com/JoseAAN/taller-coches-frontend" target="_blank" class="card-link">
+                        <article class="card">
+                            <div class="card-img-placeholder">
+                                <img src="img/Autoclean.png" alt="Proyecto Autoclean" loading="lazy">
+                            </div>
+                            <div class="card-content">
+                                <h3>E-commerce</h3>
+                                <p>E-commerce con sistema de reserva de citas diseñado utilizando Laravel y Vue.js y
+                                    desplegado usando AWS con base de datos SQL</p>
+                                <div class="tech-stack">
+                                    <span class="tech-icon" title="Laravel">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M24 22.531l-6.973-3.805v-2.723L24 12.198V22.53zm-9.015-8.24l-3.005-1.64v3.42l3.005 1.639v-3.42zM12 10.898l-3.005-1.64v3.42L12 14.317v-3.42zm9.015 4.821l-3.005-1.64v3.42l3.005 1.639v-3.42zM9.015 9.258L6.01 7.618v3.42l3.005 1.64v-3.42zm3.005-4.821l-3.005-1.64v3.42l3.005 1.639v-3.42zm9-4.437L14.047 3.805v2.723l6.968 3.805V0zM0 1.469v10.331l6.973 3.805v-2.723L0 9.077V1.469zm9.015 13.061l-3.005-1.64v3.42l3.005 1.639v-3.42zM15.015 1.469V11.8l-6.973-3.805v2.723l6.973 3.805V1.469z"
+                                                fill="#FF2D20" />
+                                        </svg>
+                                    </span>
+                                    <span class="tech-icon" title="Vue.js">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z"
+                                                fill="#4FC08D" />
+                                        </svg>
+                                    </span>
+                                    <span class="tech-icon" title="AWS">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.365 17.514c-1.396 0-2.348-.303-3.023-.973-.654-.666-.867-1.571-.867-2.613 0-1.258.423-2.222 1.258-2.883.82-.647 1.873-.918 3.32-.918h1.168v-.15c0-.687-.144-1.246-.566-1.59-.444-.368-1.077-.473-1.874-.473-.85 0-1.639.191-2.434.593-.16.082-.28.1-.383.1-.212 0-.38-.135-.453-.35l-.234-.84c-.066-.233-.03-.384.152-.516.892-.614 2.115-.918 3.486-.918 1.408 0 2.502.263 3.255.808.775.56 1.155 1.455 1.155 2.825v4.545c0 .763.05 1.408.15 1.956.03.17.03.266-.1.353l-.867.587c-.167.114-.3.1-.4-.066l-.167-.317c-.443.516-1.166.867-2.38.867zm.25-1.245c.817 0 1.408-.266 1.85-.758.413-.464.633-1.045.633-1.834v-.633h-1.012c-1.874 0-2.834.49-2.834 1.765 0 1.05.617 1.46 1.363 1.46zm8.814 1.245c-.482 0-.9-.082-1.232-.234-.183-.1-.233-.216-.167-.4l.216-.8c.067-.234.2-.317.417-.234.25.117.583.184.95.184.6 0 .866-.184.866-.533 0-.317-.183-.466-.75-.683-.933-.35-1.633-.683-1.633-1.8 0-1.05.867-1.783 2.15-1.783.5 0 .9.05 1.25.15.183.05.25.133.183.333l-.216.784c-.067.233-.184.3-.417.216a2.035 2.035 0 0 0-.8-.167c-.483 0-.75.184-.75.5 0 .3.25.433.867.666 1.016.384 1.516.817 1.516 1.8 0 1.2-1.016 1.8-2.45 1.8zM4.543 15.534c-.167-.183-.167-.3-.016-.483l.8-1.016c.117-.15.234-.184.384-.05l.3.25c.616.483 1.4.75 2.183.75.917 0 1.633-.333 1.633-1.15 0-.717-.5-1.066-1.616-1.483l-.717-.267C6.01 11.535 5.06 10.95 5.06 9.535c0-1.334 1.15-2.267 2.817-2.267 1 0 1.95.317 2.65.917.133.117.133.25 0 .434l-.65.816c-.1.15-.217.184-.367.067a3.46 3.46 0 0 0-1.633-.517c-.7 0-1.233.25-1.233.833 0 .6.45.884 1.4 1.234l.75.283c1.6.584 2.4 1.2 2.4 2.65 0 1.667-1.333 2.433-3.233 2.433-1.217 0-2.4-.333-3.417-1.183zm6.303 6.098c-3.1.233-6.234-.134-8.8-.55-.267-.034-.35-.233-.083-.4 2.2-1.316 6.133-2.3 11.634-2.3 1.666 0 3.316.1 4.75.317.283.05.283.25 0 .333-1.634.45-4.4 1.834-7.5 2.6zm6.867-3.833c-.15.116-.25.033-.183-.116.2-.417.883-2.034.7-2.334-.15-.25-1.684.183-2.234.333-.167.05-.2-.05-.067-.183 1.15-1.05 3.033-2.484 3.433-2.15.4.334-.5 2.417-1.65 4.45z"
+                                                fill="#FF9900" />
+                                        </svg>
+                                    </span>
+                                    <span class="tech-icon" title="MySQL">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 2.5C6.477 2.5 2 4.29 2 6.5s4.477 4 10 4 10-1.71 10-4-4.477-4-10-4zm0 6.5c-5.185 0-9.449-1.57-9.95-3.574-.033.19-.05.38-.05.574 0 2.21 4.477 4 10 4s10-1.79 10-4c0-.194-.017-.384-.05-.574C21.449 7.43 17.185 9 12 9zm0 6c-5.185 0-9.449-1.57-9.95-3.574-.033.19-.05.38-.05.574 0 2.21 4.477 4 10 4s10-1.79 10-4c0-.194-.017-.384-.05-.574C21.449 13.43 17.185 15 12 15zm0 6c-5.185 0-9.449-1.57-9.95-3.574-.033.19-.05.38-.05.574 0 2.21 4.477 4 10 4s10-1.79 10-4c0-.194-.017-.384-.05-.574C21.449 19.43 17.185 21 12 21z"
+                                                fill="#4479A1" />
+                                        </svg>
+                                    </span>
+                                    <span class="tech-icon" title="JavaScript">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.463.675-.656 1.047-.656.745 0 1.46.273 1.954.912.285.35.617.408.903.22l1.636-1.042c.264-.176.353-.47.24-.766-.516-1.425-1.865-2.585-3.69-2.585-2.484 0-4.394 1.272-4.394 3.606 0 1.644 1.106 2.587 3.036 3.25.967.34 1.636.574 1.636 1.268 0 .546-.43 1.047-1.282 1.047-1.018 0-1.956-.51-2.433-1.21-.19-.286-.546-.388-.86-.2l-1.636 1.033c-.274.164-.378.47-.26.757.857 1.83 2.534 2.805 4.544 2.805 2.668 0 4.606-1.39 4.606-3.834 0-.306-.02-.626-.08-.946zm-9.336 2.378c.32-.09.524-.35.524-.658V7.32c0-.36-.296-.647-.656-.647h-2.554c-.36 0-.656.287-.656.647v9.493c0 2.296-1.294 3.255-2.916 3.255-.708 0-1.383-.167-1.967-.44-.27-.126-.6-.056-.786.17l-1.196 1.46c-.206.252-.163.6.096.814 1.018.847 2.35 1.31 3.91 1.31 3.084 0 5.6-1.656 5.6-4.634v-7.393z"
+                                                fill="#F7DF1E" />
+                                        </svg>
+                                    </span>
+                                    <span class="tech-icon" title="PHP">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 1.484c-6.106 0-11.458 2.273-11.458 6.002 0 3.73 5.352 6.004 11.458 6.004 6.105 0 11.458-2.274 11.458-6.004 0-3.729-5.353-6.002-11.458-6.002zM7.55 10.963c-1.155 0-1.846-.665-1.846-1.747 0-1.107.728-1.84 1.91-1.84h2.15l-.462 3.587H7.55zm5.093 0l.462-3.587h1.492l-.193 1.48c.37-.367.904-.555 1.616-.555 1.04 0 1.63.633 1.63 1.632 0 1.055-.654 1.685-1.632 1.685-.664 0-1.144-.196-1.5-.56l-.168 1.295h-1.345l.2-1.39h-1.564zm3.87-2.613c.484 0 .807.318.807.828 0 .542-.36.903-.896.903-.497 0-.785-.29-.785-.804 0-.554.346-.927.874-.927z"
+                                                fill="#777BB4" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="https://github.com/ItsBreo/Tienda-muebles" target="_blank" class="card-link">
+                        <article class="card">
+                            <div class="card-img-placeholder">
+                                <img src="img/JJDAY.png" alt="Proyecto JJDAY" loading="lazy">
+                            </div>
+                            <div class="card-content">
+                                <h3>E-commerce minimalista</h3>
+                                <p>Plataforma de venta de muebles creado usando Laravel blade para la interfaz de
+                                    usuario y MySQL para la base de datos</p>
+                                <div class="tech-stack">
+                                    <span class="tech-icon" title="Laravel Blade">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M24 22.531l-6.973-3.805v-2.723L24 12.198V22.53zm-9.015-8.24l-3.005-1.64v3.42l3.005 1.639v-3.42zM12 10.898l-3.005-1.64v3.42L12 14.317v-3.42zm9.015 4.821l-3.005-1.64v3.42l3.005 1.639v-3.42zM9.015 9.258L6.01 7.618v3.42l3.005 1.64v-3.42zm3.005-4.821l-3.005-1.64v3.42l3.005 1.639v-3.42zm9-4.437L14.047 3.805v2.723l6.968 3.805V0zM0 1.469v10.331l6.973 3.805v-2.723L0 9.077V1.469zm9.015 13.061l-3.005-1.64v3.42l3.005 1.639v-3.42zM15.015 1.469V11.8l-6.973-3.805v2.723l6.973 3.805V1.469z"
+                                                fill="#FF2D20" />
+                                        </svg>
+                                    </span>
+                                    <span class="tech-icon" title="CSS3">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.46-5.158H8.531z"
+                                                fill="#1572B6" />
+                                        </svg>
+                                    </span>
+                                    <span class="tech-icon" title="HTML5">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.46-5.158H8.531z"
+                                                fill="#E34F26" />
+                                        </svg>
+                                    </span>
+                                    <span class="tech-icon" title="MySQL">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 2.5C6.477 2.5 2 4.29 2 6.5s4.477 4 10 4 10-1.71 10-4-4.477-4-10-4zm0 6.5c-5.185 0-9.449-1.57-9.95-3.574-.033.19-.05.38-.05.574 0 2.21 4.477 4 10 4s10-1.79 10-4c0-.194-.017-.384-.05-.574C21.449 7.43 17.185 9 12 9zm0 6c-5.185 0-9.449-1.57-9.95-3.574-.033.19-.05.38-.05.574 0 2.21 4.477 4 10 4s10-1.79 10-4c0-.194-.017-.384-.05-.574C21.449 13.43 17.185 15 12 15zm0 6c-5.185 0-9.449-1.57-9.95-3.574-.033.19-.05.38-.05.574 0 2.21 4.477 4 10 4s10-1.79 10-4c0-.194-.017-.384-.05-.574C21.449 19.43 17.185 21 12 21z"
+                                                fill="#4479A1" />
+                                        </svg>
+                                    </span>
+                                    <span class="tech-icon" title="JavaScript">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.463.675-.656 1.047-.656.745 0 1.46.273 1.954.912.285.35.617.408.903.22l1.636-1.042c.264-.176.353-.47.24-.766-.516-1.425-1.865-2.585-3.69-2.585-2.484 0-4.394 1.272-4.394 3.606 0 1.644 1.106 2.587 3.036 3.25.967.34 1.636.574 1.636 1.268 0 .546-.43 1.047-1.282 1.047-1.018 0-1.956-.51-2.433-1.21-.19-.286-.546-.388-.86-.2l-1.636 1.033c-.274.164-.378.47-.26.757.857 1.83 2.534 2.805 4.544 2.805 2.668 0 4.606-1.39 4.606-3.834 0-.306-.02-.626-.08-.946zm-9.336 2.378c.32-.09.524-.35.524-.658V7.32c0-.36-.296-.647-.656-.647h-2.554c-.36 0-.656.287-.656.647v9.493c0 2.296-1.294 3.255-2.916 3.255-.708 0-1.383-.167-1.967-.44-.27-.126-.6-.056-.786.17l-1.196 1.46c-.206.252-.163.6.096.814 1.018.847 2.35 1.31 3.91 1.31 3.084 0 5.6-1.656 5.6-4.634v-7.393z"
+                                                fill="#F7DF1E" />
+                                        </svg>
+                                    </span>
+                                    <span class="tech-icon" title="PHP">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 1.484c-6.106 0-11.458 2.273-11.458 6.002 0 3.73 5.352 6.004 11.458 6.004 6.105 0 11.458-2.274 11.458-6.004 0-3.729-5.353-6.002-11.458-6.002zM7.55 10.963c-1.155 0-1.846-.665-1.846-1.747 0-1.107.728-1.84 1.91-1.84h2.15l-.462 3.587H7.55zm5.093 0l.462-3.587h1.492l-.193 1.48c.37-.367.904-.555 1.616-.555 1.04 0 1.63.633 1.63 1.632 0 1.055-.654 1.685-1.632 1.685-.664 0-1.144-.196-1.5-.56l-.168 1.295h-1.345l.2-1.39h-1.564zm3.87-2.613c.484 0 .807.318.807.828 0 .542-.36.903-.896.903-.497 0-.785-.29-.785-.804 0-.554.346-.927.874-.927z"
+                                                fill="#777BB4" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="contacto" class="footer">
+            <p>© 2026 José Antonio Alonso Navarro. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="mailto:joseantonio.practicas.daw@gmail.com" aria-label="Envíame un correo electrónico">
+                    <svg role="img" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+                <a href="https://github.com/JoseAAN" target="_blank" rel="noopener" aria-label="Mi perfil de GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+
+                <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="Mi perfil de LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
